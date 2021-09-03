@@ -44,6 +44,6 @@ describe("Age", () => {
     let venus = new PlanetAge(80);
     venus.venusAge();
     venus.venusLife();
-    expect(venus.venusExpect).toEqual(59);
+    expect(venus.venusExpect).toEqual(29);
   })
 });

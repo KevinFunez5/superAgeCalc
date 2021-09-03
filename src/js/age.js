@@ -23,7 +23,7 @@ export class PlanetAge extends Age {
     if (this.lifeExpectancy > this.venusEdad) {
       this.venusExpect = (Math.floor(this.lifeExpectancy - this.venusEdad));
     } else {
-      this.venusExpect = (Math.floor(this))
+      this.venusExpect = (Math.floor(this.venusEdad - this.lifeExpectancy));
     }
   }
 
@@ -40,7 +40,7 @@ export class PlanetAge extends Age {
   jupiterAge() {
     if (this.edad > 0){
       this.jupiterEdad = (Math.floor(this.edad * .24));
-    }
+    } 
   }
 }
   
