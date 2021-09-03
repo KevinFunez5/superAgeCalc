@@ -9,8 +9,11 @@ describe("Age", () => {
     expect(age.edad).toEqual(20);
   });
 
-  test("Returns edad in Venus years", () => {
+  test("Returns edad in Venus", () => {
     let venus = new Venus(20);
+    venus.venusAge();
     expect(venus.venusEdad).toEqual(12);
-  })
+  });
+
+  test("Returns edad in Mercury")
 });

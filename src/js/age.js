@@ -6,6 +6,12 @@ export class Age {
 export class Venus extends Age {
   constructor(edad) {
     super(edad);
-    this.venusEdad = "";
+    this.venusEdad = 0;
+  }
+
+  venusAge() {
+    if (this.edad > 0){
+      this.venusEdad = (Math.floor(this.edad * .62));
+    }
   }
 }
