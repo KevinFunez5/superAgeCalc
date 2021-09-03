@@ -33,7 +33,7 @@ describe("Age", () => {
     expect(jupiter.jupiterEdad).toEqual(4);
   });
 
-  test("Returns remaining years till life expectancy age is reached", () => {
+  test("Returns remaining years till life expectancy age is reached on Venus", () => {
     let venus = new PlanetAge(20);
     venus.venusAge();
     venus.venusLife();
@@ -45,5 +45,12 @@ describe("Age", () => {
     venus.venusAge();
     venus.venusLife();
     expect(venus.venusExpect).toEqual(29);
+  })
+
+  test("Returns remaining years till life expectancy age is reached on Mercury", () => {
+    let mercury = new PlanetAge(20);
+    mercury.mercuryAge();
+    mercury.mercuryLife();
+    expect(mercury.mercuryExpect).toEqual(74);
   })
 });
