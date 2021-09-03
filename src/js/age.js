@@ -29,3 +29,16 @@ export class Mercury extends Age {
   }
 }
 
+export class Mars extends Age {
+  constructor(edad) {
+    super(edad);
+    this.marsEdad = 0;
+  }
+
+  marsAge() {
+    if (this.edad > 0){
+      this.marsEdad = (Math.floor(this.edad * .24));
+    }
+  }
+}
+

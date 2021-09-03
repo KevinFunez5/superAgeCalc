@@ -1,4 +1,4 @@
-import { Age, Venus, Mercury, Mars } from "../src/js/age";
+import { Age, Venus, Mercury, Mars, Jupiter } from "../src/js/age";
 
 //Edad is age in spanish
 
@@ -25,5 +25,11 @@ describe("Age", () => {
     let mars = new Mars(20);
     mars.marsAge();
     expect(mars.marsEdad).toEqual(4);
+  });
+
+  test("Returns edad in Jupiter", () => {
+    let jupiter = new Jupiter(20);
+    jupiter.jupiterAge();
+    expect(jupiter.jupiterEdad).toEqual(4);
   });
 });
