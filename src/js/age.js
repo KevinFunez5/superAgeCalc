@@ -15,3 +15,17 @@ export class Venus extends Age {
     }
   }
 }
+
+export class Mercury extends Age {
+  constructor(edad) {
+    super(edad);
+    this.mercuryEdad = 0;
+  }
+
+  mercuryAge() {
+    if (this.edad > 0){
+      this.mercuryEdad = (Math.floor(this.edad * .24));
+    }
+  }
+}
+

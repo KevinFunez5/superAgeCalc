@@ -1,4 +1,4 @@
-import { Age, Venus } from "../src/js/age";
+import { Age, Venus, Mercury } from "../src/js/age";
 
 //Edad is age in spanish
 
@@ -15,5 +15,9 @@ describe("Age", () => {
     expect(venus.venusEdad).toEqual(12);
   });
 
-  test("Returns edad in Mercury")
+  test("Returns edad in Mercury", () => {
+    let mercury = new Mercury(20);
+    mercury.mercuryAge();
+    expect(mercury.mercuryEdad).toEqual(4);
+  });
 });
