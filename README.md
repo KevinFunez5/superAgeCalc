@@ -20,7 +20,8 @@
 * _Enter into that directory_
 * _Install dependencies with npm install_
 * _To run locally, use the dev command npm run start_
-* _For a production build, use npm run start_
+* _For a production build, use npm run build_
+* _To run tests use npm run test_
 
 ## Known Bugs
 
